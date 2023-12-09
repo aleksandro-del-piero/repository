@@ -1,0 +1,17 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Models\{{ModelNamespace}};
+use AleksandroDelPiero\Repository\Repositories\BaseRepository;
+
+class DummyClass extends BaseRepository
+{
+    /**
+    * Get model class
+    **/
+    public function getModel(): string
+    {
+        return {{Model}};
+    }
+}

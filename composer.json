@@ -1,0 +1,35 @@
+{
+    "name": "aleksandro_del_piero/repository",
+    "description": "Package for creating repository files for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandro Del Piero",
+            "email": "aleksandrodelpieros@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AleksandroDelPiero\\Repository\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AleksandroDelPiero\\Repository\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AleksandroDelPiero\\Repository\\RepositoryServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.3"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
